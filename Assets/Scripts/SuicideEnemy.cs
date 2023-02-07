@@ -6,6 +6,10 @@ using UnityEngine;
 public class SuicideEnemy : EnemyBasic
 {
     // Start is called before the first frame update
+
+    GameObject targetPlayer;
+    Vector3 mvDir;
+    float adjustForce = .5f;
     void Start()
     {
         health = 1;
@@ -14,17 +18,20 @@ public class SuicideEnemy : EnemyBasic
         spawnLocs.Add(new Vector3(0, screenBound - 5, 0));
         spawnLocs.Add(new Vector3(screenBound - 5, screenBound - 5, 0)); //top left/right center
         rb = GetComponent<Rigidbody>();
+
+        targetPlayer = GameObject.FindGameObjectWithTag("Player");
+        mvDir = (targetPlayer.transform.position - transform.position).normalized * speed;
+
+        rb.velocity = mvDir;
+
     }
 
     // Update is called once per frame
     //after spawn flies towards player
     void Update()
     {
-
-        GameObject targetPlayer = GameObject.FindGameObjectWithTag("Player");
-        Vector3 mvDdir = (targetPlayer.transform.position - transform.position).normalized * speed;
-
-        rb.velocity = mvDdir;
+        Vector3 adjPos = targetPlayer.transform.position;
+        
 
     }
 
