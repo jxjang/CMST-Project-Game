@@ -358,9 +358,10 @@
 "Assets/Scripts/EnemyAttack.cs"
 "Assets/Scripts/EnemyBasic.cs"
 "Assets/Scripts/LaserMv.cs"
-"Assets/Scripts/LingeringEnemyMovement.cs"
+"Assets/Scripts/LingeringEnemy.cs"
 "Assets/Scripts/PlayerController.cs"
-"Assets/Scripts/TransitoryEnemyMovement.cs"
+"Assets/Scripts/SuicideEnemy.cs"
+"Assets/Scripts/TransitoryEnemy.cs"
 -langversion:9.0
 
 /deterministic

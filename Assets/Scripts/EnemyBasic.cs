@@ -5,11 +5,16 @@ using UnityEngine;
 public class EnemyBasic : MonoBehaviour
 {
     protected int health;
-    public float screenBound = 20.0f;
+    public float screenBound = 20.0f; //oob for destroy
+    protected float speed;
+    protected List<Vector3> spawnLocs = new List<Vector3>();
+    protected Rigidbody rb;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        
         
     }
 
@@ -17,6 +22,23 @@ public class EnemyBasic : MonoBehaviour
     void Update()
     {
         
+        
+        
+        
+        
+        
+        if (transform.position.x > screenBound || transform.position.x < -screenBound || transform.position.y > screenBound || transform.position.y < -screenBound)
+        {
+            Destroy(gameObject);
+        }
+
+        if (health == 0)
+        {
+            Destroy(gameObject);   
+        }
+
+
+
     }
 
     
@@ -26,4 +48,3 @@ public class EnemyBasic : MonoBehaviour
 //parent class for enemy types
 //include hp etc vars
 //attack manager game object attached - separate obj class
-//this class will call various attack methods outlined in obj
