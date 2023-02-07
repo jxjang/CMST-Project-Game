@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     //public float moveLimitz = -11.0f; //20L -20 R
     public float moveLimit = 11.0f; //norm
     public GameObject projectile; //attack prefab
+    public int playerHP;
     void Start()
     {
         

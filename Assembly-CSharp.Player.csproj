@@ -57,14 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\LaserMv.cs" />
+    <Compile Include="Assets\Scripts\SuicideEnemy.cs" />
     <Compile Include="Assets\Scripts\DetectCollisionLaser.cs" />
     <Compile Include="Assets\Scripts\eAttackController.cs" />
     <Compile Include="Assets\Scripts\EnemyBasic.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
     <Compile Include="Assets\Scripts\LingeringEnemy.cs" />
     <Compile Include="Assets\Scripts\TransitoryEnemy.cs" />
-    <Compile Include="Assets\Scripts\SuicideEnemy.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

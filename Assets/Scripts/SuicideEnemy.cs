@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class SuicideEnemy : EnemyBasic
@@ -28,4 +29,14 @@ public class SuicideEnemy : EnemyBasic
     }
 
     //collision action
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name == "Player")
+        {
+            var temphp = other.gameObject.GetComponent("playerHP");
+            //decrement hp
+
+        }
+    }
 }
