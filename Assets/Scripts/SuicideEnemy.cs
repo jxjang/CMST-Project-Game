@@ -9,7 +9,7 @@ public class SuicideEnemy : EnemyBasic
 
     GameObject targetPlayer;
     Vector3 mvDir;
-    float adjustForce = .5f;
+    float adjustForce = .1f;
     void Start()
     {
         health = 1;
@@ -30,8 +30,11 @@ public class SuicideEnemy : EnemyBasic
     //after spawn flies towards player
     void Update()
     {
-        Vector3 adjPos = targetPlayer.transform.position;
-        
+        if (transform.position.y > targetPlayer.transform.position.y)
+        {
+            Vector3 adjPos = targetPlayer.transform.position;
+            rb.AddForce(adjPos);
+        }
 
     }
 
