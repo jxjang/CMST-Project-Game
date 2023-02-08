@@ -46,7 +46,7 @@ public class SuicideEnemy : EnemyBasic
         {
             var temphp = other.gameObject.GetComponent("playerHP");
             //decrement hp
-
+            
         }
     }
 }
