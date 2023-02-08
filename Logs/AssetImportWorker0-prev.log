@@ -1,0 +1,299 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Core' Language: 'en' Physical Memory: 11616 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/jwjan/OneDrive/Desktop/Unity/CMST/CMST Pull Remote/CMST-Project-Game
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+50419
+Successfully changed project path to: C:/Users/jwjan/OneDrive/Desktop/Unity/CMST/CMST Pull Remote/CMST-Project-Game
+C:/Users/jwjan/OneDrive/Desktop/Unity/CMST/CMST Pull Remote/CMST-Project-Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [784] Host "[IP] 192.168.4.119 [Port] 0 [Flags] 2 [Guid] 28420164 [EditorId] 28420164 [Version] 1048832 [Id] WindowsEditor(7,jwjang) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [784] Host "[IP] 192.168.4.119 [Port] 0 [Flags] 2 [Guid] 28420164 [EditorId] 28420164 [Version] 1048832 [Id] WindowsEditor(7,jwjang) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 80.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/jwjan/OneDrive/Desktop/Unity/CMST/CMST Pull Remote/CMST-Project-Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3050 Ti Laptop GPU (ID=0x25a0)
+    Vendor:   NVIDIA
+    VRAM:     3990 MB
+    Driver:   30.0.15.1278
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004280 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 71.41 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.606 seconds
+Domain Reload Profiling:
+	ReloadAssembly (607ms)
+		BeginReloadAssembly (94ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (402ms)
+			LoadAssemblies (94ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (105ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (22ms)
+			SetupLoadedEditorAssemblies (229ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (71ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (109ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.005375 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\jwjan\OneDrive\Desktop\Unity\CMST\CMST Pull Remote\CMST-Project-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\jwjan\OneDrive\Desktop\Unity\CMST\CMST Pull Remote\CMST-Project-Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (921ms)
+		BeginReloadAssembly (107ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (24ms)
+		EndReloadAssembly (714ms)
+			LoadAssemblies (75ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (308ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (199ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3440 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (173.1 KB). Loaded Objects now: 3905.
+Memory consumption went from 124.8 MB to 124.6 MB.
+Total: 3.486900 ms (FindLiveObjects: 0.282300 ms CreateObjectMapping: 0.238600 ms MarkObjects: 2.830800 ms  DeleteObjects: 0.134000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 100306.267338 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(7d01b07636ff8e84895c0a5ff859950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(7d01b07636ff8e84895c0a5ff859950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '251251611c536c60c67c45626f310563') in 0.013071 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004281 seconds.
+  path: Assets/Materials/PolygonPrototype_Texture_Grid_Glass_01.mat
+  artifactKey: Guid(728c039f8fed8b949b9511419132855c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/PolygonPrototype_Texture_Grid_Glass_01.mat using Guid(728c039f8fed8b949b9511419132855c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3be3c6a047aaa82ccc55244376aa7e6') in 0.107610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.011056 seconds.
+  path: Assets/Textures/Noise Small 2.png
+  artifactKey: Guid(a8ef66fab6f00504099cdd843b41b2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Noise Small 2.png using Guid(a8ef66fab6f00504099cdd843b41b2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08e0f10eb5dfb98b01a8a10ef5d51b5') in 0.101341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009065 seconds.
+  path: Assets/Textures/PolygonPrototype_Texture_Grid_Glass_01.png
+  artifactKey: Guid(a94ecf9f80f245345b4224d26060c3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/PolygonPrototype_Texture_Grid_Glass_01.png using Guid(a94ecf9f80f245345b4224d26060c3e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f809e736a161e3f7f55290996cdeb89b') in 0.011518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.009217 seconds.
+  path: Assets/Textures/Explosion.png
+  artifactKey: Guid(ba24b972230767a4b80618f8ccacc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Explosion.png using Guid(ba24b972230767a4b80618f8ccacc488) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e79d3f679347554ce9178b1fa4601fd') in 0.013095 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008994 seconds.
+  path: Assets/Materials/Noise Small 2.mat
+  artifactKey: Guid(4cc346e407c90564dab404f0b2f03832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Noise Small 2.mat using Guid(4cc346e407c90564dab404f0b2f03832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b8bb3f4f22e63c61695cf82c9dae6c4') in 0.015589 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002045 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(6ea315d0fd7389c41b19996891e99ae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc172811d573b296104adb4d2728db37') in 0.005616 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.012957 seconds.
+  path: Assets/Materials
+  artifactKey: Guid(692764b694f112c4cbc528d01303d292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials using Guid(692764b694f112c4cbc528d01303d292) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f82c568ef6f355ab8c5b5661d181993') in 0.007416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.008059 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6518c2d9af5fb45a14a74eb87296b3e4') in 0.006137 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004326 seconds.
+  path: Assets/Prefabs/EnemyAttack.prefab
+  artifactKey: Guid(fcb9cfab95361844380f3493b486d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EnemyAttack.prefab using Guid(fcb9cfab95361844380f3493b486d3da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2a47356c02ff578c8b54bc46d56ff01') in 0.023208 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003863 seconds.
+  path: Assets/Scripts/DetectCollisionLaser.cs
+  artifactKey: Guid(3bce4007189a6ee4e9dc31ad22fe1a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DetectCollisionLaser.cs using Guid(3bce4007189a6ee4e9dc31ad22fe1a57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aac47461b561e1cdba4f7dcf8f028638') in 0.007952 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004099 seconds.
+  path: Assets/Scripts/TransitoryEnemy.cs
+  artifactKey: Guid(d09e1e1969864f54c857c62edb55395d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/TransitoryEnemy.cs using Guid(d09e1e1969864f54c857c62edb55395d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0217d8707d55276b51bb454eba16b285') in 0.007645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003746 seconds.
+  path: Assets/Scripts/eAttackController.cs
+  artifactKey: Guid(91fdbbf43a647ee48a0ae4f4d30c2136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/eAttackController.cs using Guid(91fdbbf43a647ee48a0ae4f4d30c2136) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bbaeb9cbf1922824f5934114f2b9e8f') in 0.007099 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.003839 seconds.
+  path: Assets/Scripts/EnemyAttack.cs
+  artifactKey: Guid(0f936fddadb3c544d89dcb1260d8578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/EnemyAttack.cs using Guid(0f936fddadb3c544d89dcb1260d8578c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f7da897303d407fb35653c23e1846da') in 0.001719 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001941 seconds.
+  path: Assets/Textures
+  artifactKey: Guid(468361cd536420c45a5e350e467cd4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures using Guid(468361cd536420c45a5e350e467cd4d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2efd515b99c12fc48a9350ecd27e24b0') in 0.005657 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005032 seconds.
+  path: Assets/Prefabs/EnemyBasic.prefab
+  artifactKey: Guid(64956ad89d5600c4bac4655df197bf71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EnemyBasic.prefab using Guid(64956ad89d5600c4bac4655df197bf71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86e2774834cc76636d90c28da7bce52a') in 0.013177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005097 seconds.
+  path: Assets/Materials/Explosion.mat
+  artifactKey: Guid(42acfff540f82c94aa480153e2608e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Explosion.mat using Guid(42acfff540f82c94aa480153e2608e84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37432b0ba70ab95ff8ff1c47722c3d48') in 0.010561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005232 seconds.
+  path: Assets/Textures/Simple_Sky_Texture_01.png
+  artifactKey: Guid(1f441ba3fc474ac43926bfda07e98e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Simple_Sky_Texture_01.png using Guid(1f441ba3fc474ac43926bfda07e98e47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e22b0e7f43b5abd82590198ccf32b0ee') in 0.013134 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004940 seconds.
+  path: Assets/Prefabs/Laser.prefab
+  artifactKey: Guid(524ae5c04654c7248842a5efafb26456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Laser.prefab using Guid(524ae5c04654c7248842a5efafb26456) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f508590bf04c18f38374096fb5d0e70d') in 0.013102 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.004419 seconds.
+  path: Assets/Prefabs/SuicideBot.prefab
+  artifactKey: Guid(323b2dc34b4becd47953c1cf62864e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SuicideBot.prefab using Guid(323b2dc34b4becd47953c1cf62864e77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c92e6e260257f52e085dfe7a97128b7') in 0.012600 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.005107 seconds.
+  path: Assets/Scripts/LaserMv.cs
+  artifactKey: Guid(1fd0c0800df0c6842a1889fea8a223fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/LaserMv.cs using Guid(1fd0c0800df0c6842a1889fea8a223fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dccf32778b3c379707115799081f367') in 0.005318 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002281 seconds.
+  path: Assets/Scripts
+  artifactKey: Guid(9f0eea9526840b74bae366058152d589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts using Guid(9f0eea9526840b74bae366058152d589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29dd4bdc15028f7ed571fe0129829eea') in 0.007758 seconds 
