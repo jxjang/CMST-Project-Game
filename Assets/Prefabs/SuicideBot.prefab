@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6795509390184201770}
   m_Layer: 3
   m_Name: SuicideBot
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5134847909041409291}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bce4007189a6ee4e9dc31ad22fe1a57, type: 3}
   m_Name: 
@@ -140,4 +140,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada7d530ab83a74469994f4f9890e758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   screenBound: 20
+  pla: {fileID: 7273019472835423193, guid: b5cc699566f309644a24ec7ebe474dab, type: 3}

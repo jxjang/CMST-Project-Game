@@ -13,9 +13,10 @@ public class PlayerController : MonoBehaviour
     public float moveLimit = 11.0f; //norm
     public GameObject projectile; //attack prefab
     public int playerHP;
+    public bool playerAlive;
     void Start()
     {
-        
+        StartCoroutine(constantAttack());
     }
 
     // Update is called once per frame
@@ -47,12 +48,40 @@ public class PlayerController : MonoBehaviour
         transform.Translate(Vector3.up * vertInput * speed * Time.deltaTime);
 
         //attack
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Instantiate(projectile, transform.position, projectile.transform.rotation);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Instantiate(projectile, transform.position, projectile.transform.rotation);
+        //}
 
     }
+
+    private IEnumerator constantAttack()
+    {
+        while (playerHP > 0)
+        {
+            yield return new WaitForSeconds(0.2f);
+            Instantiate(projectile, transform.position, projectile.transform.rotation);
+        }
+    }
+
+    //check state for ui later
+    public bool CheckPlayerState()
+    {
+        if (playerHP > 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
+
+
+
+
 }
 
 //player locked to bounds of screen

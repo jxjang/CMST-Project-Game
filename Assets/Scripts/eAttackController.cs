@@ -120,7 +120,11 @@ public class eAttackController : MonoBehaviour
 
     }
 
-
+    //lingering enemy uses radial and rotate
+    //transient enemy rapid fires homing attack
+    //both done in coroutines
+    //lingering willuse periodic radial every 2-3 seconds
+    //rotate script varied 4-6 seconds at 15-25 tendrils every 10 seconds
 
 
 

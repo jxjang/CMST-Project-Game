@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 1786404342421693750}
   m_Layer: 3
   m_Name: TransientEnemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5229443921149785063}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bce4007189a6ee4e9dc31ad22fe1a57, type: 3}
   m_Name: 
@@ -154,4 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d09e1e1969864f54c857c62edb55395d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   screenBound: 20
+  pla: {fileID: 7273019472835423193, guid: b5cc699566f309644a24ec7ebe474dab, type: 3}

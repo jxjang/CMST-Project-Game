@@ -20,6 +20,7 @@ public class EnemyAttack : MonoBehaviour
     private Vector3 mvDir;
 
     GameObject target;
+    eAttackController attackController;
     
 
 
@@ -61,6 +62,8 @@ public class EnemyAttack : MonoBehaviour
 
 
     }
+
+    
 
 
 }

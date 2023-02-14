@@ -5,7 +5,7 @@ using UnityEngine;
 public class LaserMv : MonoBehaviour
 {
 
-    public float speed = 15.0f;
+    public float speed = 30.0f;
     public float limit = 20.0f;
     // Start is called before the first frame update
     void Start()

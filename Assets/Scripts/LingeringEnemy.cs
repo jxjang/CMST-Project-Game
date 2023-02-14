@@ -51,4 +51,5 @@ public class LingeringEnemy : EnemyBasic
     {
         return Random.Range(rangeXMin, rangeXMax);
     }
+
 }

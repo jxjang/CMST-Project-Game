@@ -9,7 +9,7 @@ public class SuicideEnemy : EnemyBasic
 
     GameObject targetPlayer;
     Vector3 mvDir;
-    float adjustForce = .1f;
+    float adjustForce = .03f;
     void Start()
     {
         health = 1;

@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -918655018921696339}
   m_Layer: 6
   m_Name: Laser
-  m_TagString: Untagged
+  m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fd0c0800df0c6842a1889fea8a223fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
+  speed: 25
   limit: 20
 --- !u!114 &-9085406204570917960
 MonoBehaviour:
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4685514582016639030}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3bce4007189a6ee4e9dc31ad22fe1a57, type: 3}
   m_Name: 
