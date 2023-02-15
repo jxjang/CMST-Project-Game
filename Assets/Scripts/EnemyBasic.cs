@@ -10,6 +10,7 @@ public class EnemyBasic : MonoBehaviour
     protected List<Vector3> spawnLocs = new List<Vector3>();
     protected Rigidbody rb;
     public GameObject pla;
+    //private eAttackController attacker;
 
 
     // Start is called before the first frame update
@@ -17,6 +18,7 @@ public class EnemyBasic : MonoBehaviour
     {
 
         pla = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     // Update is called once per frame

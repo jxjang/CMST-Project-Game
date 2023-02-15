@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class EnemyAttack : MonoBehaviour
 {
@@ -21,8 +22,8 @@ public class EnemyAttack : MonoBehaviour
 
     GameObject target;
     eAttackController attackController;
-    
-
+    float limit = 20f;
+    float moveLimit = 20f;
 
 
     void Start()
@@ -34,7 +35,22 @@ public class EnemyAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (transform.position.x < -moveLimit) // leftlim
+        {
+            Destroy(gameObject);
+        }
+        else if (transform.position.x > moveLimit) //rightlim
+        {
+            Destroy(gameObject);
+        }
+        else if (transform.position.y > moveLimit) //upperlim
+        {
+            Destroy(gameObject);
+        }
+        else if (transform.position.y < -moveLimit) //lowerlim
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void EAttack(bool normalAttack, bool homingAttack, bool waveAttack)  //, Transform homingTarget, float initXAngle)

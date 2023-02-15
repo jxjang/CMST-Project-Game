@@ -44,7 +44,7 @@ public class eAttackController : MonoBehaviour
         }
     }
 
-    void RadialAttack(int numProjectiles)
+    public void RadialAttack(int numProjectiles)
     {
         float stepAngle = 360f / numProjectiles;
         float initAngle = 0f;
@@ -65,7 +65,7 @@ public class eAttackController : MonoBehaviour
 
     }
 
-    void RotateRadialAttack(int numProjectiles, int shots)
+    public void RotateRadialAttack(int numProjectiles, int shots)
     {
         StartCoroutine(rotateEx(numProjectiles, shots));
         
@@ -105,7 +105,7 @@ public class eAttackController : MonoBehaviour
         //yield return new WaitForSecondsRealtime(0.1f);
     }
 
-    void HomingAttack()
+    public void HomingAttack()
     {
         //float xDir;
         //float yDir;
