@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\LingeringEnemyMovement.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\LaserMv.cs" />
     <Compile Include="Assets\Scripts\SuicideEnemy.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\ExplosionController.cs" />
     <Compile Include="Assets\Scripts\eAttackController.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\BaseBulletStarter.cs" />
+    <Compile Include="Assets\Scripts\TransitoryEnemyMovement.cs" />
     <Compile Include="Assets\Scripts\EnemyBasic.cs" />
     <Compile Include="Assets\Scripts\LingeringEnemy.cs" />
     <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\Tools.cs" />

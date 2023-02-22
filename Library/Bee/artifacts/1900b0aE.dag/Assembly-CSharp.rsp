@@ -366,9 +366,11 @@
 "Assets/Scripts/GameManager.cs"
 "Assets/Scripts/LaserMv.cs"
 "Assets/Scripts/LingeringEnemy.cs"
+"Assets/Scripts/LingeringEnemyMovement.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SuicideEnemy.cs"
 "Assets/Scripts/TransitoryEnemy.cs"
+"Assets/Scripts/TransitoryEnemyMovement.cs"
 -langversion:9.0
 
 /deterministic
