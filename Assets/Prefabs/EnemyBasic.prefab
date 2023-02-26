@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: -6792783518227461848}
   - component: {fileID: 1759894903}
   - component: {fileID: -8021775783216032437}
+  - component: {fileID: -2213024498191856307}
   m_Layer: 3
   m_Name: EnemyBasic
   m_TagString: Enemy
@@ -157,3 +158,23 @@ MonoBehaviour:
   health: 0
   screenBound: 20
   pla: {fileID: 7273019472835423193, guid: b5cc699566f309644a24ec7ebe474dab, type: 3}
+--- !u!95 &-2213024498191856307
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5789415541752255037}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

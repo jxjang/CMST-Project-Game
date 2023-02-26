@@ -42,6 +42,12 @@ public class GameManager : MonoBehaviour
 
     }
 
+    IEnumerator SpawnEnemies()
+    {
+
+    }
+
+
     int SpawnGen()
     {
         return Random.Range(0, 2);
