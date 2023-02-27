@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="root" style="align-items: flex-start; flex-direction: row; justify-content: flex-start; height: 100%; width: 100%;">
         <ui:GroupBox name="groupGameUI" style="width: 100%; flex-direction: row; align-items: flex-start; justify-content: flex-start; height: 9%; display: none;">
-            <ui:Label text="Score&#10;" display-tooltip-when-elided="true" name="labelScore" style="height: 100%; font-size: 50%; width: 150px; -unity-text-align: upper-center; align-items: center; justify-content: center;" />
-            <ui:Label text="0" display-tooltip-when-elided="true" name="scoreValue" style="font-size: 30%; width: 89px; -unity-text-align: middle-center; height: 100%;" />
+            <ui:Label text="Score" display-tooltip-when-elided="true" name="labelScore" style="height: 84px; font-size: 46%; width: 73px; -unity-text-align: upper-center; align-items: center; justify-content: center;" />
+            <ui:Label text="0" display-tooltip-when-elided="true" name="scoreValue" style="font-size: 51%; width: 89px; -unity-text-align: middle-center; height: 100%;" />
         </ui:GroupBox>
         <ui:GroupBox name="groupGameOver" style="display: flex; width: 100%; height: 100%; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.56);">
             <ui:Label text="Game Over" display-tooltip-when-elided="true" name="labelGameOver" style="width: 100%; height: 188px; align-items: center; justify-content: center; -unity-text-align: middle-center; font-size: 150px;" />

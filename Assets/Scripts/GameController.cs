@@ -85,6 +85,11 @@ public class GameController : MonoBehaviour
             groupGameUI.style.display = DisplayStyle.None;
             groupGameOver.style.display = DisplayStyle.Flex;
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 
     IEnumerator SpawnRandomEnemy(float timer)
