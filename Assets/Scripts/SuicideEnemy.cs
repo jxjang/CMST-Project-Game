@@ -12,7 +12,6 @@ public class SuicideEnemy : EnemyBasic
     float adjustForce = .03f;
     void Start()
     {
-        health = 1;
         speed = 13f;
         spawnLocs.Add(new Vector3(-screenBound - 5, screenBound - 5, 0)); //z always 0
         spawnLocs.Add(new Vector3(0, screenBound - 5, 0));
@@ -20,33 +19,23 @@ public class SuicideEnemy : EnemyBasic
         rb = GetComponent<Rigidbody>();
 
         targetPlayer = GameObject.FindGameObjectWithTag("Player");
-        mvDir = (targetPlayer.transform.position - transform.position).normalized * speed;
+        if (targetPlayer)
+        {
+            mvDir = (targetPlayer.transform.position - transform.position).normalized * speed;
 
-        rb.velocity = mvDir;
-
+            rb.velocity = mvDir;
+        }
     }
 
     // Update is called once per frame
     //after spawn flies towards player
     void Update()
     {
-        if (transform.position.y > targetPlayer.transform.position.y)
+        if (targetPlayer && (transform.position.y > targetPlayer.transform.position.y))
         {
             Vector3 adjPos = targetPlayer.transform.position;
             rb.AddForce(adjPos);
         }
-
-    }
-
-    //collision action
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.name == "Player")
-        {
-            var temphp = other.gameObject.GetComponent("playerHP");
-            //decrement hp
-            
-        }
+        OutOfBounds();
     }
 }

@@ -12,16 +12,16 @@ public class TransitoryEnemy : EnemyBasic
     //private float yMin , yMax;
     private float yWanderRange = 3f;
     private float deltaY;
-    private float varSpeed;
+    //private float varSpeed;
     private float minspeed = 5f;
     private float maxspeed = 15f;
-    private int attType;
+    //private int attType;
     Vector3 forceDir;
 
     private float minwt = 0.5f;
     private float maxwt = 1.5f;
 
-    private float radius = 5f;
+    //private float radius = 5f;
     private Vector3 initLoc;
     public GameObject bullet;
 
@@ -32,9 +32,8 @@ public class TransitoryEnemy : EnemyBasic
 
     void Start()
     {
-        health = 2;
         speed = 10f;
-        attType = 0;
+        //attType = 0;
         initLoc = transform.position;
         //spawnLocs
         //for (int i = 0; i < 10; i++)
@@ -43,7 +42,7 @@ public class TransitoryEnemy : EnemyBasic
         //}
         deltaY = Random.Range(-yWanderRange, yWanderRange);
         rb = GetComponent<Rigidbody>();
-        varSpeed = Random.Range(minspeed, maxspeed);
+        //varSpeed = Random.Range(minspeed, maxspeed);
         forceDir = new Vector3(-transform.position.x, transform.position.y + deltaY);
         //forceDir = new Vector3(-transform.position.x, transform.position.y + deltaY, 0);
         //rb.velocity = forceDir.normalized * Time.deltaTime *5;
@@ -51,7 +50,8 @@ public class TransitoryEnemy : EnemyBasic
 
         //StartCoroutine(teRadial());
         //StartCoroutine(teTendril());
-        StartCoroutine(trAttack());
+        GameObject target = GameObject.FindGameObjectWithTag("Player");
+        StartCoroutine(trAttack(target));
 
     }
 
@@ -61,7 +61,7 @@ public class TransitoryEnemy : EnemyBasic
         //Vector3 forceDir = new Vector3(-transform.position.x, transform.position.y + deltaY);
         rb.velocity = forceDir.normalized;
         initLoc = transform.position;
-
+        OutOfBounds();
     }
 
 
@@ -71,13 +71,11 @@ public class TransitoryEnemy : EnemyBasic
     //lingering willuse periodic radial every 2-3 seconds
     //rotate script varied 4-6 seconds at 15-25 tendrils every 10 seconds
 
-    public void HomingAttack()
+    public void HomingAttack(GameObject target)
     {
         //float xDir;
         //float yDir;
         float speed = 10f;
-
-        GameObject target = GameObject.FindGameObjectWithTag("Player");
 
         Vector3 mvDir = (target.transform.position - transform.position).normalized * speed;
         var hAtt = Instantiate(bullet, initLoc, Quaternion.identity);
@@ -86,27 +84,13 @@ public class TransitoryEnemy : EnemyBasic
 
     }
 
-
-    IEnumerator trAttack()
+    IEnumerator trAttack(GameObject target)
     {
-        while(true)
+        while(true && target)
         {
-
-
-            HomingAttack();
+            HomingAttack(target);
             float randWait = Random.Range(minwt, maxwt);
             yield return new WaitForSeconds(randWait);
-
-
         }
-
-
-
-
-
     }
-
-
-
-
 }

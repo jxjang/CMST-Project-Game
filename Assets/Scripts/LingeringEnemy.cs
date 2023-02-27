@@ -10,7 +10,7 @@ public class LingeringEnemy : EnemyBasic
     private int rangeYMax = 8; //randomized loiter range
     private int rangeXMin = -10;
     private int rangeXMax = 10;
-    private List<Vector3> lingerLocs = new List<Vector3>();
+    //private List<Vector3> lingerLocs = new List<Vector3>();
     private float updateSpeed;
     private Vector3 destination;
 
@@ -18,15 +18,15 @@ public class LingeringEnemy : EnemyBasic
 
     private float radialRate = 2f;
     private float radialDealta = 1f;
-    private int minProj = 10;
-    private int maxProj = 18;
+    private int minProj = 5;
+    private int maxProj = 10;
 
     private float rotateRate = 8f;
     private float rotateDelta = 3f;
-    private float rotateDuration = 4f;
+    //private float rotateDuration = 4f;
 
-    private int minAttsRot = 20;
-    private int maxAttsRot = 40;
+    private int minAttsRot = 10;
+    private int maxAttsRot = 15;
 
     private eAttackController attackController = new eAttackController();
 
@@ -39,7 +39,6 @@ public class LingeringEnemy : EnemyBasic
 
     void Start()
     {
-        health = 4;
         speed = 5f;
         rb = GetComponent<Rigidbody>();
         initLoc = transform.position;
@@ -71,7 +70,7 @@ public class LingeringEnemy : EnemyBasic
         //transform.Translate(destination.x * Time.deltaTime, destination.y * Time.deltaTime, 0);
         //rb.MovePosition(destination);
         transform.Translate((destination- transform.position).normalized * (Vector3.Distance(destination, transform.position)) * (Time.deltaTime / 7));
-        
+        OutOfBounds();
     }
 
 
@@ -98,17 +97,9 @@ public class LingeringEnemy : EnemyBasic
 
         int radProj = Random.Range(minProj, maxProj);
 
-        attackController.RadialAttack(radProj);
-
-
-
-
+        RadialAttack(initLoc, bullet, radProj);
 
         yield return new WaitForSeconds(waitDur);
-
-
-
-
     }
 
 
@@ -131,9 +122,7 @@ public class LingeringEnemy : EnemyBasic
 
     }
 
-
-
-    public void RadialAttack(int numProjectiles)
+    public void RadialAttack(Vector3 initLoc, GameObject bullet, int numProjectiles)
     {
         float stepAngle = 360f / numProjectiles;
         float initAngle = 0f;
@@ -150,8 +139,6 @@ public class LingeringEnemy : EnemyBasic
             proj.GetComponent<Rigidbody>().velocity = new Vector3(vectorDirection.x, vectorDirection.y, vectorDirection.z);
             initAngle += stepAngle;
         }
-
-
     }
 
     public void RotateRadialAttack(int numProjectiles, int shots)

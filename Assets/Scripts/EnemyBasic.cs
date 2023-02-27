@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyBasic : MonoBehaviour
 {
-    public int health;
     public float screenBound = 20.0f; //oob for destroy
     protected float speed;
     protected List<Vector3> spawnLocs = new List<Vector3>();
@@ -25,23 +24,14 @@ public class EnemyBasic : MonoBehaviour
     void Update()
     {
         
-        
-        
-        
-        
-        
+    }
+
+    public void OutOfBounds()
+    {
         if (transform.position.x > screenBound || transform.position.x < -screenBound || transform.position.y > screenBound || transform.position.y < -screenBound)
         {
             Destroy(gameObject);
         }
-
-        if (health == 0)
-        {
-            Destroy(gameObject);   
-        }
-
-
-
     }
 
     //hp decrement 
@@ -51,15 +41,14 @@ public class EnemyBasic : MonoBehaviour
         //health--;
         if (other.gameObject.tag == "PlayerAttack")
         {
-            health--;
             Destroy(other.gameObject); //dest laser
         }
-        
+
+        if (other.gameObject.name == "Player")
+        {
+            Destroy(gameObject);
+        }
     }
-
-
-
-
 }
 
 

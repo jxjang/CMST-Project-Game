@@ -21,8 +21,8 @@ public class EnemyAttack : MonoBehaviour
     private Vector3 mvDir;
 
     GameObject target;
-    eAttackController attackController;
-    float limit = 20f;
+    //eAttackController attackController;
+    //float limit = 20f;
     float moveLimit = 20f;
 
 
@@ -53,33 +53,30 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    private void EAttack(bool normalAttack, bool homingAttack, bool waveAttack)  //, Transform homingTarget, float initXAngle)
-    {
-        Quaternion newAngle = transform.rotation;
-        Vector3 newPosition;
-        if (normalAttack) //go straight, accel
-        {
-            bulletRb.AddForce(bulletRb.transform.forward * speed);
-            //return;
-        }
-        else if (homingAttack) //init homing to player
-        {
-            target = GameObject.FindGameObjectWithTag("Player");
-            mvDir = (target.transform.position - transform.position).normalized;
-            bulletRb.velocity = new Vector3(mvDir.x, mvDir.y, mvDir.z);
-        }
-        else if (waveAttack) //sinusoidal movement | keep var that changes 
-        {
-            return;
-        }
-
-
-
-
-
-    }
-
-    
-
+    //private void EAttack(bool normalAttack, bool homingAttack, bool waveAttack)  //, Transform homingTarget, float initXAngle)
+    //{
+    //    Quaternion newAngle = transform.rotation;
+    //    Vector3 newPosition;
+    //    if (normalAttack) //go straight, accel
+    //    {
+    //        bulletRb.AddForce(bulletRb.transform.forward * speed);
+    //        //return;
+    //    }
+    //    else if (homingAttack) //init homing to player
+    //    {
+    //        target = GameObject.FindGameObjectWithTag("Player");
+    //        mvDir = (target.transform.position - transform.position).normalized;
+    //        bulletRb.velocity = new Vector3(mvDir.x, mvDir.y, mvDir.z);
+    //    }
+    //    else if (waveAttack) //sinusoidal movement | keep var that changes 
+    //    {
+    //        return;
+    //    }
+    //
+    //
+    //
+    //
+    //
+    //}
 
 }

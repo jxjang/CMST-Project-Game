@@ -10,41 +10,8 @@ public class eAttackController : MonoBehaviour
     //each method is different type of attack simplified
     //enemy class will specify details of attacks
     private float radius = 5f;
-    private Vector3 initLoc;
-    public GameObject bullet;
 
-    void Start()
-    {
-        initLoc = transform.position;
-
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.X))
-        {
-            initLoc= transform.position;
-            //RadialAttack(20);
-            //InvokeRepeating("RadialAttack", )
-            
-        }
-
-        if(Input.GetKeyDown(KeyCode.Y))
-        {
-            initLoc= transform.position;
-            RotateRadialAttack(7, 20);
-        }
-        initLoc= transform.position;
-
-        if(Input.GetKeyDown(KeyCode.Z))
-        {
-            HomingAttack();
-        }
-    }
-
-    public void RadialAttack(int numProjectiles)
+    public void RadialAttack(Vector3 initLoc, GameObject bullet, int numProjectiles)
     {
         float stepAngle = 360f / numProjectiles;
         float initAngle = 0f;
@@ -61,18 +28,15 @@ public class eAttackController : MonoBehaviour
             proj.GetComponent<Rigidbody>().velocity = new Vector3(vectorDirection.x, vectorDirection.y, vectorDirection.z);
             initAngle += stepAngle;
         }
-
-
     }
 
-    public void RotateRadialAttack(int numProjectiles, int shots)
+    public void RotateRadialAttack(Vector3 initLoc, GameObject bullet, int numProjectiles, int shots)
     {
-        StartCoroutine(rotateEx(numProjectiles, shots));
-        
+        StartCoroutine(rotateEx(initLoc, bullet, numProjectiles, shots));
     }
     
 
-    IEnumerator rotateEx(int numProjectiles, int numShots)
+    IEnumerator rotateEx(Vector3 initLoc, GameObject bullet, int numProjectiles, int numShots)
     {
 
         float stepAngle = 360f / numProjectiles;
@@ -105,7 +69,7 @@ public class eAttackController : MonoBehaviour
         //yield return new WaitForSecondsRealtime(0.1f);
     }
 
-    public void HomingAttack()
+    public void HomingAttack(Vector3 initLoc, GameObject bullet)
     {
         //float xDir;
         //float yDir;

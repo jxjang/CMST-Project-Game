@@ -79,7 +79,20 @@ public class PlayerController : MonoBehaviour
 
 
 
-
+    private void OnTriggerEnter(Collider other)
+    {
+        switch (other.tag)
+        {
+            case "Enemy":
+                Debug.Log("Player ran into enemy.");
+                Destroy(gameObject);
+                break;
+            case "EnemyProjectile":
+                Debug.Log("Player was hit by projectile.");
+                Destroy(gameObject);
+                break;
+        }
+    }
 
 
 }
