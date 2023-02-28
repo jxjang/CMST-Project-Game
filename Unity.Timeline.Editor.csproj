@@ -1005,13 +1005,13 @@
       <Project>{F45B754D-2FF8-0403-3867-5AB9B01D9ED8}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{005B4213-73C4-E631-D7EB-11A4973EF1DE}</Project>
-      <Name>UnityEngine.UI</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{6C6957C5-0CD1-5858-1993-19D4DF6E1EF0}</Project>
       <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{005B4213-73C4-E631-D7EB-11A4973EF1DE}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.TestRunner.csproj">
       <Project>{D671F93D-34F4-71AD-1DB8-C4B1B7CEE467}</Project>
