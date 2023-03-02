@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour
     private GroupBox groupScore;
     private Label finalScoreValue;
     private Button buttonPlayAgain;
+    private Button buttonGameOverExit;
 
     private void Awake()
     {
@@ -43,12 +44,15 @@ public class GameController : MonoBehaviour
         finalScoreValue = groupScore.Q<Label>("finalScoreValue");
         buttonPlayAgain = groupGameOver.Q<Button>("buttonPlayAgain");
         groupGameOver.style.display = DisplayStyle.None;  // Make the GameOver screen "invisible"
+        buttonGameOverExit = groupGameOver.Q<Button>("buttonGameOverExit");
+
     }
 
     void Start()
     {
         // Subscribe to button events
         buttonPlayAgain.clicked += () => PlayAgainClicked();
+        buttonGameOverExit.clicked += () => ExitGameOverClicked();
 
         TimeScore = 0;
 
@@ -75,6 +79,7 @@ public class GameController : MonoBehaviour
         if (player)
         {
             scoreValue.text = Mathf.Round(TimeScore).ToString();
+            //scoreValue.text = TimeScore.ToString();
         }
         else
         {
@@ -113,8 +118,13 @@ public class GameController : MonoBehaviour
 
     private void PlayAgainClicked()
     {
-        Debug.Log("Player clicked 'Play Again'!");
+        //Debug.Log("Player clicked 'Play Again'!");
         Time.timeScale = 1;
         SceneManager.LoadScene("game");
+    }
+
+    private void ExitGameOverClicked()
+    {
+        Application.Quit();
     }
 }

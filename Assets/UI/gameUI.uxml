@@ -5,12 +5,13 @@
             <ui:Label text="0" display-tooltip-when-elided="true" name="scoreValue" style="font-size: 51%; width: 89px; -unity-text-align: middle-center; height: 100%;" />
         </ui:GroupBox>
         <ui:GroupBox name="groupGameOver" style="display: flex; width: 100%; height: 100%; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.56);">
-            <ui:Label text="Game Over" display-tooltip-when-elided="true" name="labelGameOver" style="width: 100%; height: 188px; align-items: center; justify-content: center; -unity-text-align: middle-center; font-size: 150px;" />
+            <ui:Label text="Game Over" display-tooltip-when-elided="true" name="labelGameOver" style="width: 100%; height: 114px; align-items: center; justify-content: center; -unity-text-align: middle-center; font-size: 99px;" />
             <ui:GroupBox name="groupScore" style="width: 100%; height: 80px; flex-direction: row; align-items: center; justify-content: center;">
                 <ui:Label text="Final Score" display-tooltip-when-elided="true" name="labelScore" style="font-size: 66%; width: 393px; -unity-text-align: middle-center; height: 100%;" />
                 <ui:Label text="0" display-tooltip-when-elided="true" name="finalScoreValue" style="font-size: 65%; width: 183px; -unity-text-align: middle-center; height: 100%;" />
             </ui:GroupBox>
-            <ui:Button text="Play Again" display-tooltip-when-elided="true" name="buttonPlayAgain" style="width: 20%; height: 11%; margin-top: 40px; font-size: 48px;" />
+            <ui:Button text="Play Again" display-tooltip-when-elided="true" name="buttonPlayAgain" style="width: 30%; height: 11%; margin-top: 40px; font-size: 48px;" />
+            <ui:Button text="Exit Game" display-tooltip-when-elided="true" name="buttonGameOverExit" style="font-size: 54px; width: 255px;" />
         </ui:GroupBox>
     </ui:VisualElement>
 </ui:UXML>

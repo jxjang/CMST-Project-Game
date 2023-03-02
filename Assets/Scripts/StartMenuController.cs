@@ -29,13 +29,14 @@ public class StartMenuController : MonoBehaviour
 
     private void ExitButtonClicked()
     {
-        if (!Application.isEditor)
-        {
-            Application.Quit();
-        }
-        else
-        {
-            Debug.Log("Exit button was clicked.");
-        }
+        //if (!Application.isEditor)
+        //{
+        //    Application.Quit();
+        //}
+        //else
+        //{
+        //    Debug.Log("Exit button was clicked.");
+        //}
+        Application.Quit();
     }
 }
