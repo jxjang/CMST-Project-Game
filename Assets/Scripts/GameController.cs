@@ -30,6 +30,8 @@ public class GameController : MonoBehaviour
     private Button buttonPlayAgain;
     private Button buttonGameOverExit;
 
+    public AudioSource gameBgm;
+
     private void Awake()
     {
         // Init game UIDocument and its pieces
@@ -50,6 +52,7 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
+        gameBgm = GetComponent<AudioSource>();
         // Subscribe to button events
         buttonPlayAgain.clicked += () => PlayAgainClicked();
         buttonGameOverExit.clicked += () => ExitGameOverClicked();
@@ -67,7 +70,7 @@ public class GameController : MonoBehaviour
             initlocs.Add(new Vector3(xbound, j));
         }
 
-        if (player == null) { Debug.LogError("Player gameobject has not been attached to the GameController!"); }
+        gameBgm.Play();
 
         StartCoroutine(SpawnRandomEnemy(spawnTimer));
     }
@@ -89,12 +92,10 @@ public class GameController : MonoBehaviour
             // Swap Game UI with GameOver UI
             groupGameUI.style.display = DisplayStyle.None;
             groupGameOver.style.display = DisplayStyle.Flex;
+            gameBgm.Stop();
         }
 
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Application.Quit();
-        }
+        
     }
 
     IEnumerator SpawnRandomEnemy(float timer)
