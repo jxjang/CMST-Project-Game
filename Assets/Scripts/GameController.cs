@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
+using UnityEngine.Timeline;
 
 public class GameController : MonoBehaviour
 {
@@ -31,6 +32,7 @@ public class GameController : MonoBehaviour
     private Button buttonGameOverExit;
 
     public AudioSource gameBgm;
+    
 
     private void Awake()
     {
@@ -52,8 +54,9 @@ public class GameController : MonoBehaviour
 
     void Start()
     {
-        gameBgm = GetComponent<AudioSource>();
-        // Subscribe to button events
+        //gameBgm = GetComponent<AudioSource>();
+        
+        
         buttonPlayAgain.clicked += () => PlayAgainClicked();
         buttonGameOverExit.clicked += () => ExitGameOverClicked();
 
